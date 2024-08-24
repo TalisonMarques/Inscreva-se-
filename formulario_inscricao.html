@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição - Instituto Marques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulário de Inscrição - Instituto Marques</h2>
+<p class="contact-info">
+    Para mais informações, entre em contato pelo e-mail: <strong>contato@institutomarquesportel.com</strong> <br>
+    ou pelo telefone: <strong>91985846171</strong>
+</p>
+<form action="mailto:contato@institutomarquesportel.com" method="post" enctype="text/plain">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" required>
+
+    <label for="rg">RG:</label>
+    <input type="text" id="rg" name="rg" required>
+
+    <label for="escolaridade">Escolaridade:</label>
+    <select id="escolaridade" name="escolaridade" required>
+        <option value="fundamental">Fundamental</option>
+        <option value="medio">Médio</option>
+        <option value="superior">Superior</option>
+        <option value="outro">Outro</option>
+    </select>
+
+    <label for="curso">Curso que deseja fazer:</label>
+    <input type="text" id="curso" name="curso" required>
+
+    <label for="data_nascimento">Data de Nascimento:</label>
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+    <button type="submit">Inscrever-se</button>
+</form>
+
+</body>
+</html>
